@@ -120,7 +120,7 @@ def placer_note():
         forme='k'
         plt.plot([rythme+1.7, rythme+1.7], [note+place, note+1+place], 'k')
         plt.plot([rythme+1.7, rythme+2.7], [note+1+place, note+0.5+place], 'k')
-    if note==3.5 or 0.5:
+    if note==3.5 or note==0.5:
         plt.plot([rythme-2.3, rythme+2.3], [note+place, note+place], 'k')
 
     plt.plot([rythme], [note+place], 'ko', markerfacecolor=forme, markersize=12)
