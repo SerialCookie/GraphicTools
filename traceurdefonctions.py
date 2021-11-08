@@ -21,7 +21,7 @@ def traceurdefonction_init():
             fonction=input('Veuillez entrer la fonction n°{} :\n'.format(i+1))
             tracefonction(fonction, start, end, points)
             legende.append(fonction)
-    except SyntaxError:
+    except:
         anim_texte('Votre saisie ne correspond pas à une expression algébrique valide... Veillez à utiliser x en tant que variable et à utiliser la syntaxe Python')
         traceurdefonction_init()
     plt.legend(legende)
